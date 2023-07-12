@@ -250,7 +250,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
         [   
-	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/moviieeadda3')
+	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/zsbackups')
         ]   
     )
 
@@ -580,8 +580,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/moviieeadda3')
+            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/zsbackups')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
@@ -872,7 +871,7 @@ async def auto_filter(client, msg, spoll=False):
                 await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝**Content Name** :`{search}`\n**Requested By**: {message.from_user.first_name}\n **USER ID**:{message.from_user.id}\n\n🗃️",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
                 await message.reply_text(text=f"△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 `{message.from_user.first_name}` 😎,\n\nमूवी का नाम सही है फिर भी मूवी नही मिल रही है तो मूवी 24 घंटे के अंदर ग्रुप में आ जाएगी\n\n<a href=https://google.com/search?q={search}%20Movie>Click Me To Check Spelling 📝</a> \n<a href=https://google.com/search?q={search}%20Movie%20Release%20Date>Click Me Check Release Date 📅</a> \n\nJoin BackUp 👉 @Moviieeadda3",
-                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🥀 Movies Update 🥀', url=f'https://t.me/moviieeadda2')],[InlineKeyboardButton('🦋 Join Backup 🌹', url=f'https://t.me/moviieeadda3')]]))
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🥀 Movies Update 🥀', url=f'https://t.me/zs_movies')],[InlineKeyboardButton('🦋 Join Backup 🌹', url=f'https://t.me/zsbackups')]]))
                 if settings["spell_check"]:
                     return await advantage_spell_chok(msg)
                 else:
@@ -936,7 +935,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/moviieeadda3')
+	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/zsbackups')
         ] 
     )
 
@@ -988,7 +987,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nमूवी का नाम सही है फिर भी मूवी नही मिल रही है तो मूवी 24 घंटे के अंदर ग्रुप में आ जाएगी\nJoin BackUp 👉 @Moviieeadda3 \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nमूवी का नाम सही है फिर भी मूवी नही मिल रही है तो मूवी 24 घंटे के अंदर ग्रुप में आ जाएगी\nJoin BackUp 👉 @zsbackups \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
