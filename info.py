@@ -45,11 +45,11 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviieeadda3')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code>\n\n⚡<b>File uploaded by [Movies Adda™](https://t.me/moviieeadda3)</b> \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : @moviieeadda3</b> 👈")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> @moviieeadda3 \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : @moviieeadda3</b> 👈")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n<b>‌‌‌‌IMDb Data by: @moviieeadda3 </b> \n\n<b>🍿 Title: {title}</b>\n<b>🌟 Rating : {rating}/10</b>\n<b>🎭 Genres: {genres}</b>\n<b>📆 Year: {year}</b>\n<b>⏰ Duration : {runtime} minutes</b>\n\n<b>♥️ Please Share Us ♥️</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "👉 <b>@zsbackups</b> 👈")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> @zsbackups \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : @zsbackups</b> 👈")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n<b>‌‌‌‌IMDb Data by: @zsbackups </b> \n\n<b>🍿 Title: {title}</b>\n<b>🌟 Rating : {rating}/10</b>\n<b>🎭 Genres: {genres}</b>\n<b>📆 Year: {year}</b>\n<b>⏰ Duration : {runtime} minutes</b>\n\n<b>♥️ Please Share Us ♥️</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
@@ -73,12 +73,12 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
 # Only Give Value in LAZY_RENAMERS if you have enabled LAZY_MODE ----- !
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001840910907'))
 #   REQ_CHANNEL is for the logs of that content name which is not found in group -- !
-URL_MODE = is_enabled((environ.get("URL_MODE", "False")), True)
+URL_MODE = is_enabled((environ.get("URL_MODE", "True")), True)
 # Use True false in url mode => Set value true if you want shortlinks - else - use value False ----- !
 
 # URL Shortener
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'shorturllink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'f99384c914477525509f4a85612096610a0')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'OmegaLinks.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '668952131f39cff85d826b7481d6e916c9ac537f')
 
 # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
@@ -88,11 +88,11 @@ if SELF_DELETE == "True":
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 Join Backup Channel 📥"
-DOWNLOAD_TEXT_URL = "https://moviieeadda2"
+DOWNLOAD_TEXT_URL = "https://zsbackups"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/moviieeadda3"
+CAPTION_BUTTON_URL = "https://t.me/zsbackups"
 
 # _______________________________________________________________________________________________________________ #
 # __________________________________________Credit_______________________________________________________________ #
